@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+  <persistence-unit name="libreria">
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <!-- Cambiar el nombre de la base de datos por la que corresponda -->
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/libreria"/>
+      <!-- Cambiar el usuario por el que corresponda -->
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <!-- Cambiar la contraseña por la que corresponda -->
+      <property name="javax.persistence.jdbc.password" value="241099"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="eclipselink.logging.level" value="FINE"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>
